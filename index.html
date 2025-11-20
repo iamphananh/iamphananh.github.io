@@ -1,139 +1,104 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tải Tốc Độ Cao</title>
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cài đặt App</title>
+<style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background: #f5f5f7;
-      color: #222;
-      padding: 32px;
-      margin: 0;
-    }
-    .wrap {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-    .card {
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-bottom: 20px;
-    }
-    .left {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      flex: 1;
-      min-width: 200px;
-    }
-    img.icon {
-      width: 72px;
-      height: 72px;
-      border-radius: 16px;
-      border: 1px solid #ccc;
-      object-fit: cover;
-      background: #fff;
-    }
-    .meta h1 {
-      font-size: 20px;
-      margin: 0 0 4px;
-    }
-    .meta .info {
-      font-size: 14px;
-      color: #555;
-      line-height: 1.5;
-    }
-    a.btn {
-      padding: 12px 24px;
-      border-radius: 999px;
-      background-color: #1a73e8;
-      color: white;
-      font-weight: 600;
-      font-size: 14px;
-      text-decoration: none;
-      white-space: nowrap;
-      transition: background 0.3s;
-    }
-    a.btn:hover {
-      background-color: #155ab6;
-    }
-    .tips {
-      color: #666;
-      font-size: 14px;
-      margin-top: 20px;
-      text-align: center;
+        background: #f5f6fa;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
     }
 
-    .trust-guide {
-  background: #fff;
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  text-align: center;
-  margin-top: 40px;
-}
+    .app-box {
+        background: #fff;
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        border-radius: 14px;
+        padding: 20px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
 
-.trust-guide h2 {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 24px;
-  color: #222;
-}
+    .app-img {
+        width: 90px;
+        height: 90px;
+        border-radius: 16px;
+        object-fit: cover;
+    }
 
-.trust-guide .steps {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-}
+    .app-info {
+        flex: 1;
+    }
 
-.trust-guide .step {
-  flex: 1;
-  min-width: 100px;
-  max-width: 140px;
-  margin: 0 auto;
-}
+    .install-btn {
+        background: #1976ff;
+        color: white;
+        padding: 12px 22px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: bold;
+        white-space: nowrap;
+    }
 
-.trust-guide .step p {
-  margin-bottom: 8px;
-  font-size: 16px;
-  color: #333;
-}
+    h2 {
+        text-align: center;
+        margin-top: 40px;
+    }
 
-.trust-guide .step img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-  </style>
+    .steps {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .step-box {
+        background: white;
+        padding: 10px;
+        border-radius: 14px;
+        width: 200px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    .step-box img {
+        width: 100%;
+        border-radius: 12px;
+        margin-top: 8px;
+    }
+
+    .footer-note {
+        margin-top: 20px;
+        text-align: center;
+        color: #555;
+    }
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <!-- App 1: LOCKET -->
-    <div class="card">
-      <div class="left">
-        <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/55/8e/cb/558ecb0b-7710-25b1-3a09-58682db7a819/app_icon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg" alt="App Icon" />
-        <div class="meta">
-          <h1>LOCKET</h1>
-          
-          </div>
-        </div>
-      </div>
-      <a class="btn" href="itms-services://?action=download-manifest&url=https://sign.testflight.mobi/signed/691e7cb9577bf/manifest.plist"
-         onclick="handleInstallClick(this)">Cài đặt</a>
+
+<!-- App Info -->
+<div class="app-box">
+    <img class="app-img" src="app-icon.png" alt="App Icon">
+
+    <div class="app-info">
+        <h3>LOCKET TEST</h3>
+        <p>Version: 1.0<br>
+        Update: 20/11/2025<br>
+       
     </div>
-    <!-- Hướng Dẫn Tin Cậy -->
+
+    <a class="install-btn" href="itms-services://?action=download-manifest&url=https://sign.testflight.mobi/signed/691e7cb9577bf/manifest.plist">Cài đặt</a>
+</div>
+
+
+   <!-- Hướng Dẫn Tin Cậy -->
 <div class="trust-guide">
   <h2>Hướng Dẫn Tin Cậy</h2>
   <div class="steps">
@@ -154,10 +119,7 @@
     <div class="tips">
       Mở bằng Safari (iPhone/iPad) → Nhấn nút Cài đặt.<br />
 <div class="tips" style="margin-top: 24px; text-align: center;">
-  <!-- ⭐️ Zalo Admin: <a href="https://zalo.me/420773099399" target="_blank" style="color: #1a73e8; text-decoration: none;">Cen iOs</a> ⭐️ -->
-</div>
+</p>
 
-    </div>
-  </div>
 </body>
 </html>
